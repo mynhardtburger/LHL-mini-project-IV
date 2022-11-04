@@ -64,7 +64,8 @@ Due to time constraints no hyper parameter tuning was performed.
 ![](./images/pipeline.png)
 
 ### Deployment
-The trained model was saved using joblib. A Flask web app created to expose an API endpoint through which new loan_status predictions can be retrieved by submitting a POST request with the data in JSON format in the body of the request. The project is commited to GIT and cloned to the AWS EC2 instance to ensure easy deployment for code updates and retrained models. The Flask server currently runs within a detached tmux session inside a python virtual environment.
+The trained model was saved using joblib. A Flask web app created to expose an API endpoint through which new loan_status predictions can be retrieved by submitting a POST request with the data in JSON format in the body of the request. The project is commited to GIT and cloned to the AWS EC2 instance to ensure easy deployment for code updates and retrained models. The Flask server currently runs within a detached tmux session inside a python virtual environment.  
+![](./images/Architecture.drawio.png)
 
 ## Results/Demo
 The Random Forest classifier provided the best ROC_AUC score on the test data of 0.7845 using all default paramaters except of max_depth=5.
